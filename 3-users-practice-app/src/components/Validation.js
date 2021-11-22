@@ -1,9 +1,13 @@
 import './Validation.css';
 
 const Validation = props => {
+    const sendAckHandler = () => {
+        props.onAck();
+    }
     return (
         <div>
-            Validation
+            <div>{`${props.message}`}</div>
+            <button onClick={sendAckHandler}>Okay</button>
         </div>
     );
 }
