@@ -1,0 +1,135 @@
+body {
+  background-color: grey;
+  position: relative;
+  width: 100%;
+}
+
+.navbar {
+  background-color: chocolate;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20000;
+}
+.navbar h1,
+.navbar .cart {
+  position: relative;
+  top: -15px;
+}
+
+.cart {
+  background-color: brown;
+  margin: 15px;
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.navbar .cart,
+.navbar .cart h4 {
+  display: inline-block;
+}
+
+.navbar .cart p {
+  display: inline-block;
+  background-color: black;
+  width: 1cm;
+  height: 0.5cm;
+  border-radius: 50px;
+}
+
+.bg-info {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.meal-img {
+  position: absolute;
+}
+.meal-img img {
+  width: 100vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.meal-img::after {
+  content: "";
+  display: block;
+  height: 200px;
+  margin-top: -100px;
+  background: grey;
+  transform: skewY(-5deg);
+}
+
+.info {
+  background-color: dimgray;
+  position: absolute;
+
+  color: #fff;
+  width: 50%;
+  margin: 0 auto 0;
+  text-align: center;
+  top: 200px;
+  left: 25%;
+  z-index: 100;
+}
+
+.menu {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 430px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item-info {
+  margin-top: 12px;
+  padding: 5px;
+}
+
+.dish-name {
+  font-weight: bold;
+}
+
+.dish-desc {
+  font-style: italic;
+}
+
+.dish-price {
+  color: brown;
+}
+.menu-item-actions {
+  margin: 20px;
+}
+.menu-item-actions h4 {
+  font-style: bolder;
+  display: inline;
+}
+
+.menu-item-actions input {
+  width: 30px;
+}
+.menu-item-actions button {
+  background-color: brown;
+  border-radius: 10px;
+  border-color: brown;
+}
+.text-center {
+  text-align: center;
+}
