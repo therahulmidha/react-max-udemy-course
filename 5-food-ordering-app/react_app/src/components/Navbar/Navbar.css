@@ -1,0 +1,43 @@
+.navbar {
+  background-color: chocolate;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20000;
+}
+.navbar h1,
+.navbar .cart {
+  position: relative;
+  top: -15px;
+}
+
+.cart {
+  background-color: brown;
+  margin: 15px;
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.navbar .cart,
+.navbar .cart h4 {
+  display: inline-block;
+}
+
+.navbar .cart p {
+  display: inline-block;
+  background-color: black;
+  width: 1cm;
+  height: 0.5cm;
+  border-radius: 50px;
+}

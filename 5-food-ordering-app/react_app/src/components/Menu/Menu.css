@@ -1,0 +1,49 @@
+.menu {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 430px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item-info {
+  margin-top: 12px;
+  padding: 5px;
+}
+
+.dish-name {
+  font-weight: bold;
+}
+
+.dish-desc {
+  font-style: italic;
+}
+
+.dish-price {
+  color: brown;
+}
+.menu-item-actions {
+  margin: 20px;
+}
+.menu-item-actions h4 {
+  font-style: bolder;
+  display: inline;
+}
+
+.menu-item-actions input {
+  width: 30px;
+}
+.menu-item-actions button {
+  background-color: brown;
+  border-radius: 10px;
+  border-color: brown;
+}
+.text-center {
+  text-align: center;
+}
