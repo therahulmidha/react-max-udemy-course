@@ -9,10 +9,11 @@
 
 .menu-item {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .menu-item-info {
+  width: 200px;
   margin-top: 12px;
   padding: 5px;
 }
@@ -34,16 +35,20 @@
 .menu-item-actions h4 {
   font-style: bolder;
   display: inline;
+  margin: 10px;
 }
 
 .menu-item-actions input {
-  width: 30px;
+  margin: 10px;
+  width: 40px;
 }
 .menu-item-actions button {
+  margin: 10px;
   background-color: brown;
   border-radius: 10px;
   border-color: brown;
 }
+
 .text-center {
   text-align: center;
 }

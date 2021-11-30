@@ -7,37 +7,39 @@
   height: 40px;
   width: 100%;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 20000;
+  z-index: 200;
 }
 .navbar h1,
-.navbar .cart {
+.navbar .cart,
+.navbar .cart span,
+.navbar .cart h4,
+.navbar .cart p {
   position: relative;
   top: -15px;
 }
 
 .cart {
   background-color: brown;
-  margin: 15px;
+  margin: 15px 0;
   height: 40px;
   width: 150px;
   border-radius: 50px;
   text-align: center;
-  border: 1px solid black;
 }
 
 .navbar .cart,
-.navbar .cart h4 {
+.navbar .cart h4,
+.navbar .cart p {
   display: inline-block;
+  margin-left: 10px;
 }
 
 .navbar .cart p {
-  display: inline-block;
-  background-color: black;
-  width: 1cm;
-  height: 0.5cm;
+  width: 20px;
+  height: 25px;
   border-radius: 50px;
+}
+
+.navbar .cart:hover {
+  cursor: pointer;
 }
