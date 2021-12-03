@@ -3,34 +3,12 @@ import { Menu } from "./components/Menu/Menu";
 import { Navbar } from "./components/Navbar/Navbar";
 import { useState } from "react";
 import { Cart } from "./components/Cart/Cart";
+import CartProvider from "./store/CartProvider";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
-  const [menuItems, setMenuItems] = useState([
-    {
-      id: 1,
-      name: "McAloo Tikki Burger",
-      desc: "Signature Burger with cheesy twist",
-      price: 20.5,
-      qty: 0,
-    },
-    {
-      id: 2,
-      name: "Pizza Mcpuff",
-      desc: "Taste of pizza in a puff",
-      price: 19.5,
-      qty: 0,
-    },
-    {
-      id: 3,
-      name: "McVeggie Burger",
-      desc: "All mayo cream burger",
-      price: 45.99,
-      qty: 0,
-    },
-  ]);
 
-  const showCartHandler = (show) => {
+  const showCartHandler = () => {
     setShowCart(true);
   };
 
@@ -39,12 +17,12 @@ function App() {
   };
 
   return (
-    <div>
-      {showCart && <Cart onHideCart={hideCartHandler} items={menuItems} />}
+    <CartProvider>
+      {showCart && <Cart onHideCart={hideCartHandler} items={[]} />}
       <Navbar onShowCart={showCartHandler} />
       <Info />
-      <Menu menuItems={menuItems} />
-    </div>
+      <Menu />
+    </CartProvider>
   );
 }
 

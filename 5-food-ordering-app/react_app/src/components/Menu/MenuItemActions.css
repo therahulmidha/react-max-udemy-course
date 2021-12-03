@@ -1,0 +1,33 @@
+.menu-item-actions {
+  margin: 20px;
+}
+.menu-item-actions h4 {
+  font-style: bolder;
+  display: inline;
+  margin: 10px;
+}
+
+.menu-item-actions input {
+  margin: 10px;
+  width: 40px;
+}
+.menu-item-actions button {
+  margin: 10px;
+  background-color: brown;
+  border-radius: 10px;
+  border-color: brown;
+  color: #fff;
+}
+
+.menu-item-actions button:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .menu-item-actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+  }
+}

@@ -1,10 +1,10 @@
 import "./Info.css";
-import meals from "./meals.jpg";
+import meals from "../../assets/meals.jpg";
 export const Info = () => {
   return (
     <section className="bg-info">
       <div className="meal-img">
-        <img src={meals} alt="" />
+        <img src={meals} alt="A table full of delicious food!" />
       </div>
       <div className="info">
         <h1>Delicious Food, Delivered To You</h1>
