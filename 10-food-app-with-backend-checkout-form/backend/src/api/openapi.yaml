@@ -1,0 +1,93 @@
+openapi: 3.0.0
+info:
+  title: Calendar Service API
+  description: This isCalendar Service API.
+  version: "1.0"
+paths:
+  /event:
+    get:
+      x-swagger-router-controller: calendar
+      operationId: getEvent
+      description: Returns calendar events for a particular date range
+      parameters:
+        - name: startDate
+          in: query
+          description: Start date of calendar
+          required: true
+          schema:
+            type: string
+          example: "01-04-2021"
+        - name: endDate
+          in: query
+          description: End date of calendar
+          required: true
+          schema:
+            type: string
+          example: "18-04-2021"
+      responses:
+        "200":
+          description: Events fetched successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Success"
+        default:
+          description: Invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      x-swagger-router-controller: calendar
+      operationId: insertEvent
+      description: Create an event
+      requestBody:
+        description: Request body for event creation
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateEvent"
+
+      responses:
+        "200":
+          description: Successful request.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Success"
+        default:
+          description: Invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+servers:
+  - url: "/api/v1"
+
+components:
+  schemas:
+    Success:
+      properties:
+        message: 
+          type: string
+      required:
+        - message
+    Error:
+      properties:
+        message: 
+          type: string
+      required:
+        - message
+    CreateEvent:
+      properties:
+        startDate:
+          type: string
+        endDate:
+          type: string
+        type:
+          type: string
+      required:
+        - startDate
+        - endDate
