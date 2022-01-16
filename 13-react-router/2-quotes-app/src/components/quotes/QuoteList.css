@@ -1,0 +1,10 @@
+.quote-list > * {
+    margin: 8px;
+}
+.quote-list > button {
+    color: #337b84;
+    background-color: #fff;
+    border: 1px solid #337b84;
+    padding: 3px;
+    border-radius: 3px;
+}

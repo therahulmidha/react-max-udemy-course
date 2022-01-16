@@ -1,0 +1,26 @@
+.quote > * {
+  margin-bottom: 20px;
+}
+.quote-card {
+  background-color: #1b292c;
+  color: #fff;
+  width: 100%;
+}
+
+.quote-card h2 {
+  padding: 30px;
+}
+
+.quote-card p {
+  text-align: right;
+  padding: 20px;
+  font-style: italic;
+}
+
+.load-comments {
+  display: block;
+  color: var(--main-color);
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+}

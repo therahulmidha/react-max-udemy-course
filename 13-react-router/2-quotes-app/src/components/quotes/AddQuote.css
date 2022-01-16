@@ -1,0 +1,51 @@
+form {
+  border: 1px lightgray solid;
+  box-shadow: 0 0 2px 2px lightgray;
+  background-color: #fff;
+}
+
+form > * {
+  display: block;
+  margin: 0 auto 5px;
+  width: 80%;
+}
+form > label {
+  text-align: left;
+  font-weight: bold;
+}
+form > textarea {
+  height: 100px;
+}
+
+input,
+textarea {
+  background-color: #f1eff1;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #d3f6f8;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.btn-container button {
+  width: unset;
+  background-color: #327c80;
+  color: #fff;
+  padding: 4px;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
